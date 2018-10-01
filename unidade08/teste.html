@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+            <div id="janela"> </div>
+            <script>
+                   //set interval chama uma função de maneira repetida
+                var indice= 0;
+                var intervalo;
+                function mudarValor(){
+                    janela.innerHTML=indice;
+                    indice++;
+                    if(indice >= 4){
+                        clearInterval(intervalo);
+                        
+                    }
+                }
+                
+               intervalo= setInterval(mudarValor, 2000);
+            </script>
+    </body>
+</html>
